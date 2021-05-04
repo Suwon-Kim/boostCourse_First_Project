@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개 페이지</title>
+    <style>    
+        #headline {
+            float:right;
+        }
+
+        #home, #myIntro, #myPic, #whatTime {
+            background-color: aquamarine;
+            color : black;
+            width : 100px;
+            height: 30px;
+            box-shadow: 5px 5px 5px 5px gray;
+            cursor: pointer;
+        }
+        
+        #bodyline {
+            margin-top: 4%;
+            position: absolute;
+            width: 97%;
+            margin-left: 0.7%;
+            height: 85%;
+            text-align: center;
+            
+        }
+
+        #copyRight {
+            position: absolute;
+            width: 99%;
+            margin-top: 750px;
+            color: gray;
+            text-align: center;
+            
+        }
+
+        #main_myIntro, #main_myPic {
+            width: 70px;
+            height: 70px;
+            background-color: aquamarine;
+            box-shadow: 5px 5px 5px 5px gray;
+            cursor: pointer;
+        }
+
+        #title_img {
+            margin-top: 2%;
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+	<header id = "headline">
+		<input id = "home" type = "button" value = "홈" onclick="home()">
+		<input id = "myIntro" type = "button" value = "자기소개" onclick="myIntro()">
+		<input id = "myPic" type = "button" value = "내사진" onclick="myPhoto()">
+		<input id = "whatTime" type = "button" value = "몇시에요" onclick = "whatTime()">
+	</header>
+	<article id = "bodyline">
+		<section id = "intro">
+			<h2>웹 개발자 ~! suwonKim</h2>
+			<p>
+				함께 개발하고 같이 성장하고 싶어요<br>
+				부산광역시 해운대구 우2동 어딘가 살고 있어요!
+			</p>
+		</section>
+		<section id = "main_btn">
+			<input id = "main_myIntro" type = "button" value = "자기소개" onclick="myIntro();">
+			<input id = "main_myPic" type = "button" value = "내사진" onclick="myPhoto()">
+		</section>
+		<section id = main_Img>
+			<img id = title_img alt="" src="./image/title.jpg">
+		</section>
+	</article>
+	<footer id = "copyRight">
+		CopyRight 2021. 저작권자 suwonKim
+	</footer>
+</body>
+<script>
+    function myIntro() {
+        location.href = "aboutme.html";
+    }
+
+    function home() {
+        location.href = "index.html";
+    }
+
+    function myPhoto() {
+        location.href = "photo.html";
+    }
+
+    function whatTime() {
+        location.href = "http://localhost:8080/about_me/today";
+    }
+</script>
+</html>

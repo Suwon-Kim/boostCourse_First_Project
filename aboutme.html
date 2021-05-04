@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내소개</title>
+    <style>
+        #headline {
+            float:right;
+        }
+
+        #home, #myIntro, #myPic, #whatTime {
+            background-color: aquamarine;
+            color : black;
+            width : 100px;
+            height: 30px;
+            box-shadow: 5px 5px 5px 5px gray;
+            cursor: pointer;
+        }
+        #copyRight {
+            position: absolute;
+            padding-bottom: 10px;
+            padding-top: 20px;
+            width: 99%;
+            margin-top: 650px;
+            color: gray;
+            text-align: center;
+        }
+
+        #bodyline {
+            margin-top: 4%;
+            position: absolute;
+            width: 97%;
+            margin-left: 0.7%;
+            height: 85%;
+            text-align: center;
+        }
+        #doing_Best, #myPortfolio, #project_Explanation {
+            padding-top: 1%;
+            padding-left: 10%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header id = "headline">
+		<input id = "home" type = "button" value = "홈" onclick="home()">
+		<input id = "myIntro" type = "button" value = "자기소개" onclick="myIntro()">
+		<input id = "myPic" type = "button" value = "내사진" onclick="myPhoto()">
+		<input id = "whatTime" type = "button" value = "몇시에요" onclick = "whatTime()">
+	</header>
+    <article id = "bodyline">
+		<section id = "doing_Best">
+			<h2>이런것을 잘해요?</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Ipsa officiis porro incidunt saepe exercitationem voluptates, 
+                quo inventore molestias eveniet ratione impedit eligendi itaque.<br> 
+                Recusandae mollitia eum itaque commodi nulla. Reprehenderit.<br>
+			</p>
+		</section>
+        <section id = "myPortfolio">
+			<h2>나의 포트폴리오</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Ipsa officiis porro incidunt saepe exercitationem voluptates, 
+                quo inventore molestias eveniet ratione impedit eligendi itaque.<br> 
+                Recusandae mollitia eum itaque commodi nulla. Reprehenderit.<br>
+			</p>
+		</section>
+        <section id = "project_Explanation">
+			<h2>나의 최근 프로젝트 설명</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Ipsa officiis porro incidunt saepe exercitationem voluptates, 
+                quo inventore molestias eveniet ratione impedit eligendi itaque.<br> 
+                Recusandae mollitia eum itaque commodi nulla. Reprehenderit.<br>
+			</p>
+		</section>
+	</article>
+    <footer id = "copyRight">
+		CopyRight 2021. 저작권자 suwonKim<br>
+	</footer>
+</body>
+<script>
+    function myIntro() {
+        location.href = "aboutme.html";
+    }
+
+    function home() {
+        location.href = "index.html";
+    }
+
+    function myPhoto() {
+        location.href = "photo.html";
+    }
+
+    function whatTime() {
+        
+    }
+
+    function whatTime() {
+        location.href = "http://localhost:8080/about_me/today";
+    }
+</script>
+</html>

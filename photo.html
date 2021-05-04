@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #headline {
+            float:right;
+        }
+
+        #home, #myIntro, #myPic, #whatTime {
+            background-color: aquamarine;
+            color : black;
+            width : 100px;
+            height: 30px;
+            box-shadow: 5px 5px 5px 5px gray;
+            cursor: pointer;
+        }
+
+        #copyRight {
+            position: absolute;
+            padding-bottom: 10px;
+            padding-top: 20px;
+            width: 99%;
+            margin-top: 650px;
+            color: gray;
+            text-align: center;
+        }
+
+        #first_pic, #second_pic {
+            border: 2px solid gray;
+            width: 180px;
+            height: 180px;
+        }
+
+        #bodyline {
+            margin-top: 5%;
+            position: absolute;
+            width: 97%;
+            margin-left: 0.7%;
+            height: 85%;
+        }
+
+        #sec1{
+            float: left;
+        }
+
+        #man_img, #title_img {
+            border: 1px solid gray;
+            width: 250px;
+            height: 250px;
+        }
+        #content_table {
+            margin-left: 4%;
+        }
+    </style>
+</head>
+<body>
+    <header id = "headline">
+		<input id = "home" type = "button" value = "홈" onclick="home()">
+		<input id = "myIntro" type = "button" value = "자기소개" onclick="myIntro()">
+		<input id = "myPic" type = "button" value = "내사진" onclick="myPhoto()">
+		<input id = "whatTime" type = "button" value = "몇시에요" onclick = "whatTime()">
+	</header>
+    
+    <article id = "bodyline">
+        <table id = content_table>
+            <tr>
+                <td><img id = man_img src = "./image/man.jpg" alt = "..."></td>
+                <td style="float:left; margin-top: 15%;">
+                   	2020.05.04<br>
+                   	우리 동생 증명사진 입니다<br>
+                   	대학교 졸업 직전 찍은 사진입니다
+                </td>
+                
+            </tr>
+            <tr>
+                <td><img id = "title_img" src = "./image/title.jpg" alt = "..."></td>
+                <td style="float:left; margin-top: 15%;">
+                   	2020.05.02<br>
+                   	해외 예쁜 비치 사진입니다<br>
+                   	여름 성수기때 찍은 사진입니다<br>
+                </td>
+            </tr>
+        </table>
+    </article>
+
+	<footer id = "copyRight">
+		CopyRight 2021. 저작권자 suwonKim<br>
+	</footer>
+</body>
+<script>
+    function myIntro() {
+        location.href = "aboutme.html";
+    }
+
+    function home() {
+        location.href = "index.html";
+    }
+
+    function myPhoto() {
+        location.href = "photo.html";
+    }
+
+    function whatTime() {
+        location.href = "http://localhost:8080/about_me/today";
+    }
+</script>
+</html>
